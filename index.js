@@ -6,6 +6,7 @@ require('dotenv').config()
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(cors())
+const {getContact,createContact} = require('./server/router')
 
 //get all contact list
 app.get('/get/contact/list',getContact)
