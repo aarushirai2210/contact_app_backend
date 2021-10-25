@@ -14,6 +14,6 @@ app.get('/get/contact/list',getContact)
 //create new contact 
 app.post('/create/new/user',createContact)
 
-app.listen(3001,()=>{
+app.listen(process.env.PORT,()=>{
     console.log('hello')
 })
